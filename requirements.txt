@@ -13,3 +13,4 @@ tiktoken
 PyMuPDF
 ruff
 black
+langgraph
