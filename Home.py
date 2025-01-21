@@ -34,8 +34,6 @@ if "documents" not in st.session_state:
     st.session_state.documents = {}  # Store documents in memory
 
 # Ensure data directories exist
-os.makedirs("data/rag-files", exist_ok=True)
-os.makedirs("data/vectorstore", exist_ok=True)
 
 def validate_credentials() -> bool:
     """Validate that all required credentials are present."""
