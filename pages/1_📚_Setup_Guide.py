@@ -31,7 +31,7 @@ def show_footer():
         """, unsafe_allow_html=True)
 
 # Move logo to sidebar
-st.sidebar.image("../assets/logo.png", use_container_width=True)
+st.sidebar.image("assets/logo.png", use_container_width=True)
 st.sidebar.markdown("---")
 
 st.title("🔧 Setup Guide")

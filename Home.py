@@ -203,8 +203,18 @@ def show_welcome():
     """Display the welcome section."""
     st.title("SlackSage")
     
-    # Demo notice
-    st.caption("🚀 Demo Version")
+    # Demo notice and Security Warning
+    st.warning("""
+    🚨 **IMPORTANT: Demo Version - Security Notice**
+    
+    This is a demonstration version with the following limitations:
+    - Documents are stored in shared memory and are not isolated between workspaces
+    - Uploaded content is temporary and not persisted
+    - Not suitable for sensitive or confidential information
+    - For demonstration and testing purposes only
+    
+    For a secure, production-ready version with proper data isolation, please contact us about our enterprise solutions.
+    """)
     
     # Welcome message
     st.markdown("""
@@ -220,7 +230,7 @@ def show_welcome():
     st.info("""
     **Quick Start:**
     1. Configure your API credentials
-    2. Upload your documentation
+    2. Upload your documentation (non-sensitive files only)
     3. Connect and start using in Slack
     
     Need help setting up? Check the Setup Guide in the sidebar for step-by-step instructions.
@@ -229,7 +239,8 @@ def show_welcome():
     # Demo context
     st.caption("""
     This demo showcases the core capabilities of our AI-powered knowledge assistant. 
-    For enterprise solutions and custom implementations, check out our services in the sidebar.
+    For enterprise solutions with proper security measures and custom implementations, 
+    visit [v3-ai.com](https://v3-ai.com) or connect on [LinkedIn](https://www.linkedin.com/in/willyv3/).
     """)
 
     st.image("assets/logo.png", use_container_width=True)
