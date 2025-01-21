@@ -243,7 +243,10 @@ def show_welcome():
     visit [v3-ai.com](https://v3-ai.com) or connect on [LinkedIn](https://www.linkedin.com/in/willyv3/).
     """)
 
-    st.image("assets/logo.png", use_container_width=True)
+    try:
+        st.image("assets/logo.png", use_container_width=True)
+    except:
+        pass
 
 def show_footer():
     """Display the footer with links."""

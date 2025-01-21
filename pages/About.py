@@ -31,7 +31,10 @@ def show_footer():
         """, unsafe_allow_html=True)
 
 # Move logo to sidebar
-st.sidebar.image("assets/logo.png", use_container_width=True)
+try:
+    st.sidebar.image("assets/logo.png", use_container_width=True)
+except:
+    st.sidebar.write("SlackSage")
 st.sidebar.markdown("---")
 
 st.title("About SlackSage")

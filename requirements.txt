@@ -14,3 +14,4 @@ PyMuPDF
 ruff
 black
 langgraph
+langgraph-sdk
