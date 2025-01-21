@@ -3,6 +3,7 @@ langchain
 langchain-openai
 langchain-community
 openai
+langchain-core
 slack-bolt
 faiss-cpu
 google-api-python-client
